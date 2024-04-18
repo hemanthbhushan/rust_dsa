@@ -4,6 +4,8 @@ mod ds {
 
 use ds::linkedlist::{
     linkedlist::LinkedList , 
+    linkedlist_alter::LinkedList as LinkedList_alter , 
+
 };
 
 
@@ -25,13 +27,19 @@ fn  main() {
 
      linkedlist.delete_from_end();
      linkedlist.delete_from_end();
+     
 
+
+    let mut list = LinkedList_alter::new();
+    list.push(1);
+    list.push(2);
+    list.push(3);
+    list.print(); // Output: LinkedList: 1, 2, 3,
 
 
     
      
     // linkedlist.pop();
     println!("linkedlist created : {:?}" , linkedlist);
-
 
 }
