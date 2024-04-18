@@ -71,7 +71,25 @@ impl<T:std::fmt::Display> LinkedList<T> {
         self.length -= 1;
     }
 
-    
+    pub fn delete_tail(&mut self){
+
+        
+        match self.tail {
+            Some(mut ptr) =>unsafe {
+                match ptr.as_mut().prev  {
+                    Some(mut ptr) => {
+                      ptr.as_mut().next = None;
+                    },
+                    None => println!("None is persent") 
+                } 
+            },
+            None => println!("None is persent")
+        }
+
+        
+    }
+
+
 
      
 }
