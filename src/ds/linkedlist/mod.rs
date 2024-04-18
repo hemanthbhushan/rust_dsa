@@ -1,3 +1,3 @@
 pub mod linkedlist;
-pub mod linkedlist_alter;
+pub mod duble_linkedlist;
 
